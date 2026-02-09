@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    
+    
+  }
+
+/****************   Nav Section **********************/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #138d8d;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+/*********** Splash Page ************************/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #7ba1a9;
+}
+
+header h1 {
+  font-family: Roboto;
+  color: #000080;
+}
+
+header img {
+  border: black;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.tagline {
+  font-style: italic;
+  text-align: center;
+}
+
+/************* Sections ********************/
+section {
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  background-color: #d3e7eb;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+section h3 {
+  font-family: Roboto;
+  color: #000080;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+section ul {
+  font-style: italic;
+  padding: 10px;
+}
+
+section a {
+  color:green;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card img {
+  border: black;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.card {
+  border: black;
+  border-style: solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7ba1a9;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: silver;
+}
+
+input {
+  border: black;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+textarea {
+   border: black;
+  border-style: solid;
+  border-radius: 8px;
+}
